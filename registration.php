@@ -65,7 +65,7 @@ if (isset($_POST["first_name"]) && isset($_POST["last_name"]) && isset($_POST["e
         $sql = "INSERT INTO users (first_name, last_name, email) VALUES ('$first_name', '$last_name', '$email')";
         
         if (mysqli_query($conn, $sql)) {
-            header("Location: ../Q3/index.html");
+            header("Location: ../index.html");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
